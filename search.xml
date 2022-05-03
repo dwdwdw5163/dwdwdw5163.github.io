@@ -29,4 +29,18 @@
         <tag>Osu</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Ubuntu Wacom input driver setup</title>
+    <url>/2022/05/03/Ubuntu-Wacom-input-driver-setup/</url>
+    <content><![CDATA[<h1 id="Ubuntu-Wacom-input-driver-setup"><a href="#Ubuntu-Wacom-input-driver-setup" class="headerlink" title="Ubuntu Wacom input driver setup"></a>Ubuntu Wacom input driver setup</h1><p><a href="https://wiki.archlinux.org/title/Wacom_tablet#Temporary_TwinView_setup">https://wiki.archlinux.org/title/Wacom_tablet#Temporary_TwinView_setup</a><br><a href="https://man.archlinux.org/man/wacom.4#Option~6">https://man.archlinux.org/man/wacom.4#Option~6</a></p>
+<p>&#x2F;etc&#x2F;X11&#x2F;xorg.conf.d&#x2F;72-wacom-options.conf</p>
+<figure class="highlight vim"><table><tr><td class="code"><pre><span class="line">Section <span class="string">&quot;InputClass&quot;</span></span><br><span class="line">        Identifier <span class="string">&quot;WACOM OPTIONS pen&quot;</span></span><br><span class="line">        MatchDriver <span class="string">&quot;wacom&quot;</span></span><br><span class="line">        MatchProduct <span class="string">&quot;Pen&quot;</span></span><br><span class="line">        NoMatchProduct <span class="string">&quot;eraser&quot;</span></span><br><span class="line">        NoMatchProduct <span class="string">&quot;cursor&quot;</span></span><br><span class="line">        Option <span class="string">&quot;Mode&quot;</span> <span class="string">&quot;Absolute&quot;</span></span><br><span class="line">        Option <span class="string">&quot;TopX&quot;</span> <span class="string">&quot;1200&quot;</span></span><br><span class="line">        Option <span class="string">&quot;TopY&quot;</span> <span class="string">&quot;2300&quot;</span></span><br><span class="line">        Option <span class="string">&quot;BottomX&quot;</span> <span class="string">&quot;14000&quot;</span></span><br><span class="line">        Option <span class="string">&quot;BottomY&quot;</span> <span class="string">&quot;9500&quot;</span></span><br><span class="line">EndSection</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Wacom</tag>
+      </tags>
+  </entry>
 </search>
